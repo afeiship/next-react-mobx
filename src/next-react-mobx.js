@@ -9,9 +9,10 @@
       bootstrap: function(inApp, inOptions) {
         var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
         var app = nx.mix(inApp, EventMitt);
+        var key = options.key;
         // deletes
         delete options.key;
-        global[options.key] = nx.mix({ $app: app }, options);
+        global[key] = nx.mix({ $app: app }, options);
       }
     }
   });

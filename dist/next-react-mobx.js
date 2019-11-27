@@ -2,7 +2,7 @@
  * name: @feizheng/next-react-mobx
  * url: https://github.com/afeiship/next-react-mobx
  * version: 1.0.0
- * date: 2019-11-27T07:04:33.989Z
+ * date: 2019-11-27T07:09:15.511Z
  * license: MIT
  */
 
@@ -17,9 +17,10 @@
       bootstrap: function(inApp, inOptions) {
         var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
         var app = nx.mix(inApp, EventMitt);
+        var key = options.key;
         // deletes
         delete options.key;
-        global[options.key] = nx.mix({ $app: app }, options);
+        global[key] = nx.mix({ $app: app }, options);
       }
     }
   });
