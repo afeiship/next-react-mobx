@@ -1,20 +1,21 @@
 /*!
- * name: @feizheng/next-react-mobx
- * url: https://github.com/afeiship/next-react-mobx
+ * name: @jswork/next-react-mobx
+ * description: Next toolkit for mobx app.
+ * homepage: https://github.com/afeiship/next-react-mobx
  * version: 1.0.0
- * date: 2019-11-27T07:09:15.511Z
+ * date: 2020-11-22 18:36:02
  * license: MIT
  */
 
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
-  var EventMitt = global.EventMitt || require('@feizheng/event-mitt');
-  var DEFAULT_OPTIONS = { key: 'esbi' };
+  var nx = global.nx || require('@jswork/next');
+  var EventMitt = global.EventMitt || require('@jswork/event-mitt');
+  var DEFAULT_OPTIONS = { key: 'nxmx' };
 
   var NxReactMobx = nx.declare('nx.ReactMobx', {
     statics: {
-      bootstrap: function(inApp, inOptions) {
+      bootstrap: function (inApp, inOptions) {
         var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
         var app = nx.mix(inApp, EventMitt);
         var key = options.key;
@@ -29,5 +30,3 @@
     module.exports = NxReactMobx;
   }
 })();
-
-//# sourceMappingURL=next-react-mobx.js.map
