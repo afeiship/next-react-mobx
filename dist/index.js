@@ -3,7 +3,7 @@
  * description: Next toolkit for mobx app.
  * homepage: https://github.com/afeiship/next-react-mobx
  * version: 1.0.0
- * date: 2020-11-22 18:36:02
+ * date: 2020-11-22 18:37:34
  * license: MIT
  */
 
